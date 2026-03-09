@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/oopp-team-64-main" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/oopp-team-64-main" />
+            <option value="$PROJECT_DIR$/oopp-team-64-main/client" />
+            <option value="$PROJECT_DIR$/oopp-team-64-main/commons" />
+            <option value="$PROJECT_DIR$/oopp-team-64-main/server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

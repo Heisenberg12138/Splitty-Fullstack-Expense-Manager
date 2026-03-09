@@ -1,0 +1,50 @@
+plugins {
+    id 'application'
+    id("org.openjfx.javafxplugin") version "0.0.11"
+	id 'org.kordamp.gradle.jacoco' version '0.54.0'
+}
+
+application {
+    mainClass = 'client.Main'
+}
+
+javafx {
+    version = "21.0.2"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+java {
+	sourceCompatibility = '21'
+}
+
+
+dependencies {
+	implementation project(":commons")
+	
+	implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '3.0.3'
+	implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '3.0.3'
+	implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '3.0.3'
+	
+	implementation group: 'jakarta.activation', name: 'jakarta.activation-api', version: '2.0.1'
+
+	implementation group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
+
+
+	implementation 'com.google.inject:guice:7.0.0'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket:3.2.2'
+
+	implementation 'org.openjfx:javafx-controls:21.0.2'
+	implementation 'org.openjfx:javafx-fxml:21.0.2'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+	testImplementation 'junit:junit:4.13.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+	testImplementation 'org.mockito:mockito-core:3.6.0'
+	testImplementation 'org.mockito:mockito-junit-jupiter:3.6.0'
+
+}
+
+test {
+	useJUnitPlatform() // This enables JUnit 5 tests to be run
+}
