@@ -1,5 +1,5 @@
 # Splitty
-This is our implementation of Splitty.
+An expense splitting calculator to be used by groups of friends, developed by a team of 5 at TU Delft.
 
 ### Instructions on how to execute this project:
 
